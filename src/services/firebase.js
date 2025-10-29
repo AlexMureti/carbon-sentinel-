@@ -6,13 +6,13 @@ import { getAnalytics } from "firebase/analytics";
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBVkxcOqdwBBpOkzYLnlJNkLYMti01b2sg",
-  authDomain: "carbon-sentinel.firebaseapp.com",
-  projectId: "carbon-sentinel",
-  storageBucket: "carbon-sentinel.firebasestorage.app",
-  messagingSenderId: "1069720577901",
-  appId: "1:1069720577901:web:c415a5df90e23ca1891c64",
-  measurementId: "G-0HBK503Y55"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
