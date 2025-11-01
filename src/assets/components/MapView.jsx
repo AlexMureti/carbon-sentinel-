@@ -32,7 +32,9 @@ function MapView() {
           { name: "Nakuru", lat: -0.3031, lon: 36.0800 },
           { name: "Thika", lat: -1.0396, lon: 37.0834 },
           { name: "Garissa", lat: -0.4569, lon: 39.6583 },
-
+          { name: "Nakuru", lat: -0.3031, lon: 36.0800 },
+          { name: "Ngong", lat: -1.3562118, lon: 36.6561}
+    
         ];
 
         const allData = await Promise.all(

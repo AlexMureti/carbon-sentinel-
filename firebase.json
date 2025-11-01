@@ -1,9 +1,7 @@
-
 {
   "hosting": {
     "site": "carbon-sentinel-58fce",
-
-    "public": "public",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
