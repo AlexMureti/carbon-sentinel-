@@ -4,7 +4,7 @@ import MapView from "./assets/components/MapView";
 import ReportForm from "./assets/components/ReportForm";
 import ReportList from "./assets/components/ReportList";
 import CouncilDashboard from "./assets/components/CouncilDashboard";
-import "./App.css";
+
 
 // Firebase imports
 import {
@@ -19,6 +19,7 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
+
 
 function App() {
   const [reports, setReports] = useState([]);
@@ -100,6 +101,8 @@ function App() {
         onSignInGitHub={handleSignInGitHub}
         onSignInEmail={handleSignInEmail}
       />
+      
+
 
       <main className="p-4 md:p-6 space-y-8">
         {/* Title */}
@@ -132,7 +135,18 @@ function App() {
               onUpdateStatus={handleUpdateStatus}
             />
           </section>
+
         )}
+        
+{/* Test Line 1 - Red background with white text */}
+<div className="bg-red-500 text-white p-4 m-2 rounded-lg">
+  🔴 RED BACKGROUND TEST - Tailwind CSS is working!
+</div>
+
+{/* Test Line 2 - Blue background with yellow text */}
+<div className="bg-blue-600 text-yellow-300 p-4 m-2 rounded-lg shadow-lg">
+  🔵 BLUE BACKGROUND TEST - Colors are applying correctly!
+</div>
       </main>
 
       <footer className="text-center text-gray-500 text-sm py-4">
